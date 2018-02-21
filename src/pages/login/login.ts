@@ -56,9 +56,9 @@ export class LoginPage {
             );    } else {
             this.loading.present();
         }
-        this.loginService.login(this.loginForm.value).subscribe(
+      /*  this.loginService.login(this.loginForm.value).subscribe(
             res => this.loginSuccess(res)
-        );
+        );*/
     }
     public loginSuccess(res: any) {
         this.cookieService.removeAll();
